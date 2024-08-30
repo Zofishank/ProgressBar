@@ -13,7 +13,6 @@ body{
     color:  rgb(62, 60, 62);
 }
 .page{
-    height: 100%;
     width: 100%;
     background: #e3edf7;
 
@@ -124,8 +123,9 @@ body{
 
 
 @media only screen and (max-width:500px) {
-    body{
-        min-height: 100vh;
+    page{
+        height: 150vh;
+        width: 100%;
     }
     .title{
         padding-top: 50px;
