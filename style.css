@@ -1,0 +1,120 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: "Nunito", sans-serif;
+    font-optical-sizing: auto;
+    font-style: normal;
+}
+body{
+    height: 100vh;
+    width: 100vw;
+    color:  rgb(62, 60, 62);
+}
+.page{
+    height: 100%;
+    width: 100%;
+    background: #e3edf7;
+
+}
+.title{
+    text-align: center;
+    padding-top: 150px;
+    font-size: 20px;
+}
+.skill{
+    position: relative; 
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+   margin-top:100px;
+
+}
+
+.outer{
+    height: 160px;
+    width:160px;
+    border-radius: 50%;
+    padding: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    box-shadow: 6px 6px 10px -1px rgba(0,0,0,0.15),
+    -6px -6px 10px -1px rgba(255,255,255,0.7);
+}
+.inner{
+    height: 118px;
+    width:118px;
+    border-radius: 50%;
+    box-shadow:inset 4px 4px 6px -1px rgba(0,0,0,0.2),
+               inset -4px -4px 10px -1px rgba(255,255,255,0.7),
+               -0.5px -0.5px 0px rgba(255,255,255,1),
+                0.5px 0.5px 0px rgba(0,0,0,0.15),
+               0px 12px 10px -10px rgba(255,255,255,0.05);
+    display: flex;
+    justify-content: center;
+    align-items: center;           
+    background: white;
+}
+.no1,.no2,.no3{
+    font-size: 25px;
+    font-weight: 600;
+    color: #555;
+}.name{
+    margin: 20px;
+}
+
+.html_svg,.css_svg,.js_svg{    
+    position: absolute;
+    top: 30%;
+}
+
+#html_svg{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: htmlAnim 2s linear forwards;
+}
+
+#css_svg{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: jsAnim 2s linear forwards;
+}
+
+
+#js_svg{
+    fill: none;
+    stroke: url(#GradientColor);
+    stroke-width: 20px;
+    stroke-dasharray: 440;
+    stroke-dashoffset: 440;
+    animation: jsAnim 2s linear forwards;
+}
+
+
+
+@keyframes htmlAnim{
+    100%{
+        stroke-dashoffset:44;
+    }
+}
+
+@keyframes cssAnim{
+    100%{
+        stroke-dashoffset:88;
+    }
+}
+
+@keyframes jsAnim{
+    100%{
+        stroke-dashoffset:154;
+    }
+}
